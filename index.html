@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="icon" href="img/b.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lisu+Bosa:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="asset/master.css">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="logo "><img src="img/logo-light.svg" alt=""></div>
+            <div class="icon ">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </nav>
+        <div class="left">
+            <div class="childLeft">
+                <div class="box">
+                    <h4>create by saba</h4>
+                    <h2>THE NEW START IS COMING</h2>
+                    <p>We are preparing something amazing and exciting for you. Special surprise for our subscribers
+                        only.</p>
+                    <div class="form">
+                        <div>NOTIFY ME</div>
+                        <div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sicial">
+                    <ul>
+                        <li>FACEBOOK</li>
+                        <li>/</li>
+                        <li>INSTAGRAM</li>
+                        <li>/</li>
+                        <li>TWITTER</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <figure>
+                <img src="img/1000x1500-slide-1.jpg" alt="">
+                <figcaption>01/05</figcaption>
+            </figure>
+            <figure>
+                <img src="img/1000x1500-slide-2.jpg" alt="">
+                <figcaption>02/05</figcaption>
+            </figure>
+            <figure>
+                <img src="img/1000x1500-slide-3.jpg" alt="">
+                <figcaption>03/05</figcaption>
+            </figure>
+            <figure>
+                <img src="img/1000x1500-slide-4.jpg" alt="">
+                <figcaption>04/05</figcaption>
+            </figure>
+            <figure>
+                <img src="img/1000x1500-slide-5.jpg" alt="">
+                <figcaption>05/05</figcaption>
+            </figure>
+        </div>
+    </main>
+    <div class="menuPage" style="right: -100%;">
+        <div class="menuBox">
+            <ul>
+                <li class="li" onclick="color(this)"><a href="index.html">01. HOME</a></li>
+                <li class="li" onclick="color(this)"><a href="#">02. ABOUT US</a></li>
+                <li class="li" onclick="color(this)"><a href="#">03. OUR WORKS</a></li>
+                <li class="li" onclick="color(this)"><a href="#">04. CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementsByClassName('icon')[0].addEventListener('click', () => {
+        if (document.getElementsByClassName('menuPage')[0].style.right == '-100%') {
+            console.log('s')
+            document.getElementsByClassName('menuPage')[0].style.right = '0px'
+            document.getElementsByClassName('icon')[0].style.transform = 'rotate(0deg)'
+        } else {
+            console.log('n')
+            document.getElementsByClassName('menuPage')[0].style.right = '-100%'
+            document.getElementsByClassName('icon')[0].style.transform = 'rotate(45deg)'
+        }
+
+    })
+    function color(e) {
+        e.style.color = '#5a3889'
+    }
+</script>
+
+</html>
